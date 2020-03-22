@@ -4,7 +4,7 @@ import re
 import json
 import HTMLParser
 
-keycloakUrl='https://localhost/auth/realms/jdbcExam/protocol/openid-connect/';
+keycloakUrl='https://localhost/auth/realms/exam/protocol/openid-connect/';
 clientId ='ui';
 user='user';
 password='test';
