@@ -17,12 +17,12 @@ this test will not provide to much inside
 
 ```
 docker run --rm \
-	--network=host `#Needed as we run against localhost`\
-	owasp/zap2docker-weekly\
-	zap-baseline.py
-		-j `#Include AJAX spider`\
-		-c zap_config `#Exclude some rules we are not interested in`\
-		-z "-config globalexcludeurl.url_list.url.regex='^https:\/\/localhost\/auth.*$'" `#Exclude the auth server as we do not want to check it`\
+	--network=host `#Needed as we run against localhost` \
+	owasp/zap2docker-weekly \
+	zap-baseline.py \
+		-j `#Include AJAX spider` \
+		-c zap_config `#Exclude some rules we are not interested in` \
+		-z "-config globalexcludeurl.url_list.url.regex='^https:\/\/localhost\/auth.*$'" `#Exclude the auth server as we do not want to check it` \
 		-t https://localhost
 ```
 ### Baseline tests with authentication
@@ -32,13 +32,13 @@ see also https://github.com/zaproxy/zaproxy/blob/develop/docker/docs/scan-hooks.
 ```
 docker run --rm \
 	-v $(pwd):/zap/wrk:rw \
-	--network=host `#Needed as we run against localhost`\
-	owasp/zap2docker-weekly\
-	zap-baseline.py
-		-j `#Include AJAX spider`\
-		--hook=/zap/wrk/authentication-hooks.py `#Incluse hooks for authentication`\
-		-c zap_config `#Include config file with rules`\
-		-z "-config globalexcludeurl.url_list.url.regex='^https:\/\/localhost\/auth.*$'" `#Exclude the auth server as we do not want to check it`\
+	--network=host `#Needed as we run against localhost` \
+	owasp/zap2docker-weekly \
+	zap-baseline.py \
+		-j `#Include AJAX spider` \
+		--hook=/zap/wrk/authentication-hooks.py `#Incluse hooks for authentication` \
+		-c zap_config `#Include config file with rules` \
+		-z "-config globalexcludeurl.url_list.url.regex='^https:\/\/localhost\/auth.*$'" `#Exclude the auth server as we do not want to check it` \
 		-t https://localhost `#The actual target`
 ```
 
@@ -49,13 +49,13 @@ see https://github.com/zaproxy/zaproxy/wiki/ZAP-Full-Scan
 ```
 docker run --rm \
 	-v $(pwd):/zap/wrk:rw \
-	--network=host `#Needed as we run against localhost`\
-	owasp/zap2docker-weekly\
+	--network=host `#Needed as we run against localhost` \
+	owasp/zap2docker-weekly \
 	zap-full-scan.py \
-		-j `#Include AJAX spider`\
-		--hook=/zap/wrk/authentication-hooks.py `#Incluse hooks for authentication`\
-		-c zap_config `#Include config file with rules`\
-		-z "-config globalexcludeurl.url_list.url.regex='^https:\/\/localhost\/auth.*$'" `#Exclude the auth server as we do not want to check it`\
+		-j `#Include AJAX spider` \
+		--hook=/zap/wrk/authentication-hooks.py `#Incluse hooks for authentication` \
+		-c zap_config `#Include config file with rules` \
+		-z "-config globalexcludeurl.url_list.url.regex='^https:\/\/localhost\/auth.*$'" `#Exclude the auth server as we do not want to check it` \
 		-t https://localhost `#The actual target`
 ```
 
@@ -67,13 +67,13 @@ see https://github.com/zaproxy/zaproxy/wiki/ZAP-API-Scan
 ```
 docker run --rm \
 	-v $(pwd):/zap/wrk:rw \
-	--network=host `#Needed as we run against localhost`\
-	owasp/zap2docker-weekly\
+	--network=host `#Needed as we run against localhost` \
+	owasp/zap2docker-weekly \
 	zap-api-scan.py \
-		-j `#Include AJAX spider`\
-		--hook=/zap/wrk/authentication-hooks.py `#Incluse hooks for authentication`\
-		-c zap_config `#Include config file with rules`\
-		-z "-config globalexcludeurl.url_list.url.regex='^https:\/\/localhost\/auth.*$'" `#Exclude the auth server as we do not want to check it`\
+		-j `#Include AJAX spider` \
+		--hook=/zap/wrk/authentication-hooks.py `#Incluse hooks for authentication` \
+		-c zap_config `#Include config file with rules` \
+		-z "-config globalexcludeurl.url_list.url.regex='^https:\/\/localhost\/auth.*$'" `#Exclude the auth server as we do not want to check it` \
 		-t https://localhost/api/swagger/docs `#The openapi doc`
 ```
 ### Customized test script
