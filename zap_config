@@ -1,0 +1,6 @@
+# zap-baseline rule configuration file
+# Change WARN to IGNORE to ignore rule or FAIL to fail if rule matches
+# Only the rule identifiers are used - the names are just for info
+# You can add your own messages to each rule by appending them after a tab on each line.
+10035	IGNORE	(Strict Transport header are a pain locally)
+10036	IGNORE	(We do not want to test nginx)
