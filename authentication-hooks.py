@@ -4,7 +4,7 @@ import re
 import json
 import HTMLParser
 
-keycloakUrl='https://localhost/auth/realms/exam/protocol/openid-connect/';
+keycloakUrl='http://localhost:9080/auth/realms/exam/protocol/openid-connect/';
 clientId ='ui';
 user='user';
 password='test';
@@ -36,10 +36,6 @@ def zap_started(zap, target):
         scriptengine='Oracle Nashorn',
         filename='/zap/wrk/add_header.js',
         scriptdescription="desc");
-    print('Enable script ' + proxyScriptName + ' -> ' +
-            zap.script.enable(scriptname=proxyScriptName));
-    print('Set script value ' + accessToken + ' in ' + proxyScriptName + ' -> ' +
-            zap.script.set_script_var(scriptname=proxyScriptName, varkey="authHeader", varvalue=accessToken));
-    print('Set gloabl value ' + accessToken + ' -> ' +
+    print('Use access token ' + accessToken + ' -> ' +
             zap.script.set_global_var(varkey="authHeader", varvalue=accessToken));
     return zap, target;
