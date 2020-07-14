@@ -215,6 +215,14 @@ Instances: 7
   
   
   
+* URL: [http://localhost:8080/api/exams](http://localhost:8080/api/exams)
+  
+  
+  * Method: `POST`
+  
+  
+  
+  
 * URL: [http://localhost:8080/api/exams/examId](http://localhost:8080/api/exams/examId)
   
   
@@ -231,21 +239,13 @@ Instances: 7
   
   
   
-* URL: [http://localhost:8080/api/exams](http://localhost:8080/api/exams)
-  
-  
-  * Method: `POST`
-  
-  
-  
-  
 Instances: 3
   
 ### Solution
 <p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>
   
 ### Other information
-<p>The origin domain used for comparison was: </p><p>localhost</p><p>JSESSIONID=AB0BBFF6CD1F96B96151DA000A6ED033</p><p></p>
+<p>The origin domain used for comparison was: </p><p>localhost</p><p>JSESSIONID=53B7591D4D858D0A341A775202E5F0F0</p><p></p>
   
 ### Reference
 * https://tools.ietf.org/html/rfc6265#section-4.1

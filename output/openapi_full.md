@@ -49,7 +49,29 @@
   
   
   
-* URL: [http://localhost:8080/swagger/27131830586761530](http://localhost:8080/swagger/27131830586761530)
+* URL: [http://localhost:8080/swagger/1033867041850797418](http://localhost:8080/swagger/1033867041850797418)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `text/html`
+  
+  
+  
+  
+* URL: [http://localhost:8080/api/exams/examId/5085130803446017351](http://localhost:8080/api/exams/examId/5085130803446017351)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `text/html`
+  
+  
+  
+  
+* URL: [http://localhost:8080/4772583987503436138](http://localhost:8080/4772583987503436138)
   
   
   * Method: `GET`
@@ -72,17 +94,6 @@
   
   
 * URL: [http://localhost:8080](http://localhost:8080)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `text/html`
-  
-  
-  
-  
-* URL: [http://localhost:8080/397643028485847322](http://localhost:8080/397643028485847322)
   
   
   * Method: `GET`
@@ -126,18 +137,7 @@
   
   
   
-* URL: [http://localhost:8080/api/8908014837262819507](http://localhost:8080/api/8908014837262819507)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `text/html`
-  
-  
-  
-  
-* URL: [http://localhost:8080/api/exams/examId/5545753803147630463](http://localhost:8080/api/exams/examId/5545753803147630463)
+* URL: [http://localhost:8080/api/6443480110810663177](http://localhost:8080/api/6443480110810663177)
   
   
   * Method: `GET`
@@ -206,7 +206,7 @@ Instances: 11
   
   
   
-* URL: [http://localhost:8080/api/8908014837262819507](http://localhost:8080/api/8908014837262819507)
+* URL: [http://localhost:8080/api/6443480110810663177](http://localhost:8080/api/6443480110810663177)
   
   
   * Method: `GET`
@@ -305,7 +305,18 @@ Instances: 11
   
   
   
-* URL: [http://localhost:8080/api/exams/7796800365598745941](http://localhost:8080/api/exams/7796800365598745941)
+* URL: [http://localhost:8080/swagger/1033867041850797418](http://localhost:8080/swagger/1033867041850797418)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `HTTP/1.1 404`
+  
+  
+  
+  
+* URL: [http://localhost:8080/api/exams/1494384277491176634](http://localhost:8080/api/exams/1494384277491176634)
   
   
   * Method: `GET`
@@ -327,7 +338,7 @@ Instances: 11
   
   
   
-* URL: [http://localhost:8080/api/exams/examId/5545753803147630463](http://localhost:8080/api/exams/examId/5545753803147630463)
+* URL: [http://localhost:8080/api/exams/examId/5085130803446017351](http://localhost:8080/api/exams/examId/5085130803446017351)
   
   
   * Method: `GET`
@@ -349,7 +360,7 @@ Instances: 11
   
   
   
-* URL: [http://localhost:8080/397643028485847322](http://localhost:8080/397643028485847322)
+* URL: [http://localhost:8080/4772583987503436138](http://localhost:8080/4772583987503436138)
   
   
   * Method: `GET`
@@ -386,17 +397,6 @@ Instances: 11
   
   
   * Method: `POST`
-  
-  
-  * Evidence: `HTTP/1.1 400`
-  
-  
-  
-  
-* URL: [http://localhost:8080/api/exams/examId/participants](http://localhost:8080/api/exams/examId/participants)
-  
-  
-  * Method: `GET`
   
   
   * Evidence: `HTTP/1.1 400`
