@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm output/*
+
 # Simple baseline test
 # See https://www.zaproxy.org/docs/docker/baseline-scan/
 #
@@ -10,27 +12,24 @@ docker run --rm \
   --network=host `#Needed as we run against localhost` \
   owasp/zap2docker-weekly \
   zap-baseline.py \
-    -j `#Include AJAX spider` \
     -z "-config globalexcludeurl.url_list.url.regex='^http:\/\/localhost:9080\/.*$'" `#Exclude the auth server` \
+    -j `#Include AJAX spider` \
     -t http://localhost:8080 \
     -w output/baseline.md \
-    -r output/baseline.html
 
-# Baseline test with authentication
-# See https://www.zaproxy.org/docs/docker/baseline-scan/
+# Report URLs
 #
-# Same as above, just with authentication
+# Same as baseline scan, just added an additional report
 docker run --rm \
   -v $(pwd):/zap/wrk:rw \
   --network=host `#Needed as we run against localhost` \
   owasp/zap2docker-weekly \
   zap-baseline.py \
-    -j `#Include AJAX spider` \
-    --hook=/zap/wrk/authentication-hooks.py `#Include hooks for authentication` \
+    --hook=/zap/wrk/print-url-hook.py `#Generate additonal URL report` \
     -z "-config globalexcludeurl.url_list.url.regex='^http:\/\/localhost:9080\/.*$'" `#Exclude the auth server` \
+    -j `#Include AJAX spider` \
     -t http://localhost:8080 \
-    -w output/baseline_auth.md \
-    -r output/baseline_auth.html
+    -w output/baseline.md
 
 # API-Scan
 # See https://www.zaproxy.org/docs/docker/api-scan/
@@ -41,13 +40,28 @@ docker run --rm \
   --network=host `#Needed as we run against localhost` \
   owasp/zap2docker-weekly \
   zap-api-scan.py \
+    --hook=/zap/wrk/print-url-hook.py `#Generate additonal URL report` \
+    -z "-config globalexcludeurl.url_list.url.regex='^http:\/\/localhost:9080\/.*$'" `#Exclude the auth server` \
+    -S `#Skip active scan for now`\
     -f openapi \
+    -t http://localhost:8080/swagger/docs/ \
+    -w output/oppenapi.md
+
+# API-Scan with authentication
+# See https://www.zaproxy.org/docs/docker/api-scan/
+#
+# Same as above, just with authentication
+docker run --rm \
+  -v $(pwd):/zap/wrk:rw \
+  --network=host `#Needed as we run against localhost` \
+  owasp/zap2docker-weekly \
+  zap-api-scan.py \
     --hook=/zap/wrk/authentication-hooks.py `#Include hooks for authentication` \
     -z "-config globalexcludeurl.url_list.url.regex='^http:\/\/localhost:9080\/.*$'" `#Exclude the auth server` \
-    -t http://localhost:8080/swagger/docs/ \
     -S `#Skip active scan for now`\
-    -w output/oppenapi.md \
-    -r output/openapi.html
+    -f openapi \
+    -t http://localhost:8080/swagger/docs/ \
+    -w output/oppenapi_auth.md
 
 # API-Scan with active
 # See https://www.zaproxy.org/docs/docker/api-scan/
@@ -58,11 +72,8 @@ docker run --rm \
   --network=host `#Needed as we run against localhost` \
   owasp/zap2docker-weekly \
   zap-api-scan.py \
-    -f openapi \
-    -j `#Include AJAX spider` \
     --hook=/zap/wrk/authentication-hooks.py `#Incluse hooks for authentication` \
     -z "-config globalexcludeurl.url_list.url.regex='^http:\/\/localhost:9080\/.*$'" `#Exclude the auth server` \
+    -f openapi \
     -t http://localhost:8080/swagger/docs/ \
-    -w output/openapi_full.md \
-    -r output/openapi_full.html
-
+    -w output/openapi_full.md

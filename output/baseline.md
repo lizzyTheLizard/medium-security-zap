@@ -34,7 +34,7 @@
   
   
 #### Description
-<p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: </p><p>frame-ancestor</p>
+<p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: </p><p>frame-ancestors</p>
   
   
   
@@ -420,7 +420,6 @@ Instances: 102
 <p>1413257819, which evaluates to: 2014-10-14 03:36:59</p>
   
 ### Reference
-* https://www.owasp.org/index.php/Top_10_2013-A6-Sensitive_Data_Exposure
 * http://projects.webappsec.org/w/page/13246936/Information%20Leakage
 
   

@@ -38,7 +38,40 @@
   
   
   
+* URL: [http://localhost:8080/api/8312463895441296050](http://localhost:8080/api/8312463895441296050)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `text/html`
+  
+  
+  
+  
 * URL: [http://localhost:8080/](http://localhost:8080/)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `text/html`
+  
+  
+  
+  
+* URL: [http://localhost:8080/4363827610238108779](http://localhost:8080/4363827610238108779)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `text/html`
+  
+  
+  
+  
+* URL: [http://localhost:8080/swagger/5970970495134664069](http://localhost:8080/swagger/5970970495134664069)
   
   
   * Method: `GET`
@@ -71,40 +104,7 @@
   
   
   
-* URL: [http://localhost:8080/api/exams/examId/466136016846846003](http://localhost:8080/api/exams/examId/466136016846846003)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `text/html`
-  
-  
-  
-  
-* URL: [http://localhost:8080/swagger/6179496882337185680](http://localhost:8080/swagger/6179496882337185680)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `text/html`
-  
-  
-  
-  
 * URL: [http://localhost:8080/api](http://localhost:8080/api)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `text/html`
-  
-  
-  
-  
-* URL: [http://localhost:8080/api/8454718993548512101](http://localhost:8080/api/8454718993548512101)
   
   
   * Method: `GET`
@@ -137,7 +137,7 @@
   
   
   
-* URL: [http://localhost:8080/8513391533947995920](http://localhost:8080/8513391533947995920)
+* URL: [http://localhost:8080/api/exams/examId/3091172801537566724](http://localhost:8080/api/exams/examId/3091172801537566724)
   
   
   * Method: `GET`
@@ -184,17 +184,6 @@ Instances: 11
   
   
   
-* URL: [http://localhost:8080/api/8454718993548512101](http://localhost:8080/api/8454718993548512101)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `HTTP/1.1 404`
-  
-  
-  
-  
 * URL: [http://localhost:8080/api](http://localhost:8080/api)
   
   
@@ -217,13 +206,13 @@ Instances: 11
   
   
   
-* URL: [http://localhost:8080/swagger/6179496882337185680](http://localhost:8080/swagger/6179496882337185680)
+* URL: [http://localhost:8080/api/exams/6117174637283530035](http://localhost:8080/api/exams/6117174637283530035)
   
   
   * Method: `GET`
   
   
-  * Evidence: `HTTP/1.1 404`
+  * Evidence: `HTTP/1.1 400`
   
   
   
@@ -257,6 +246,17 @@ Instances: 11
   
   
   * Evidence: `HTTP/1.1 400`
+  
+  
+  
+  
+* URL: [http://localhost:8080/api/exams/examId/3091172801537566724](http://localhost:8080/api/exams/examId/3091172801537566724)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `HTTP/1.1 404`
   
   
   
@@ -316,13 +316,24 @@ Instances: 11
   
   
   
-* URL: [http://localhost:8080/api/exams/7883145527995845212](http://localhost:8080/api/exams/7883145527995845212)
+* URL: [http://localhost:8080/swagger/5970970495134664069](http://localhost:8080/swagger/5970970495134664069)
   
   
   * Method: `GET`
   
   
-  * Evidence: `HTTP/1.1 400`
+  * Evidence: `HTTP/1.1 404`
+  
+  
+  
+  
+* URL: [http://localhost:8080/api/8312463895441296050](http://localhost:8080/api/8312463895441296050)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `HTTP/1.1 404`
   
   
   
@@ -338,18 +349,7 @@ Instances: 11
   
   
   
-* URL: [http://localhost:8080/8513391533947995920](http://localhost:8080/8513391533947995920)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `HTTP/1.1 404`
-  
-  
-  
-  
-* URL: [http://localhost:8080/api/exams/examId/466136016846846003](http://localhost:8080/api/exams/examId/466136016846846003)
+* URL: [http://localhost:8080/4363827610238108779](http://localhost:8080/4363827610238108779)
   
   
   * Method: `GET`
@@ -453,7 +453,6 @@ Instances: 1
 <p>61383424, which evaluates to: 1971-12-12 10:57:04</p>
   
 ### Reference
-* https://www.owasp.org/index.php/Top_10_2013-A6-Sensitive_Data_Exposure
 * http://projects.webappsec.org/w/page/13246936/Information%20Leakage
 
   
