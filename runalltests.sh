@@ -45,7 +45,7 @@ docker run --rm \
     -S `#Skip active scan for now`\
     -f openapi \
     -t http://localhost:8080/swagger/docs/ \
-    -w output/oppenapi.md
+    -w output/openapi.md
 
 # API-Scan with authentication
 # See https://www.zaproxy.org/docs/docker/api-scan/
@@ -61,7 +61,7 @@ docker run --rm \
     -S `#Skip active scan for now`\
     -f openapi \
     -t http://localhost:8080/swagger/docs/ \
-    -w output/oppenapi_auth.md
+    -w output/openapi_auth.md
 
 # API-Scan with active
 # See https://www.zaproxy.org/docs/docker/api-scan/

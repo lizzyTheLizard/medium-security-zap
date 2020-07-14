@@ -215,10 +215,10 @@ Instances: 7
   
   
   
-* URL: [http://localhost:8080/api/exams](http://localhost:8080/api/exams)
+* URL: [http://localhost:8080/api/exams/examId](http://localhost:8080/api/exams/examId)
   
   
-  * Method: `POST`
+  * Method: `DELETE`
   
   
   
@@ -231,10 +231,10 @@ Instances: 7
   
   
   
-* URL: [http://localhost:8080/api/exams/examId](http://localhost:8080/api/exams/examId)
+* URL: [http://localhost:8080/api/exams](http://localhost:8080/api/exams)
   
   
-  * Method: `DELETE`
+  * Method: `POST`
   
   
   
@@ -245,7 +245,7 @@ Instances: 3
 <p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>
   
 ### Other information
-<p>The origin domain used for comparison was: </p><p>localhost</p><p>JSESSIONID=C18199EBCC95F835020E3843C2CED8A3</p><p></p>
+<p>The origin domain used for comparison was: </p><p>localhost</p><p>JSESSIONID=AB0BBFF6CD1F96B96151DA000A6ED033</p><p></p>
   
 ### Reference
 * https://tools.ietf.org/html/rfc6265#section-4.1
