@@ -1,0 +1,27 @@
+https://localhost
+http://localhost:8080/
+http://localhost:8080/api
+http://localhost:8080/api/exams
+http://localhost:8080/api/exams/070bb3c9-06bf-4e62-bdce-bc5faf88779a
+http://localhost:8080/api/exams/070bb3c9-06bf-4e62-bdce-bc5faf88779a/participants
+http://localhost:8080/api/exams/070bb3c9-06bf-4e62-bdce-bc5faf88779a/solution
+http://localhost:8080/api/exams/070bb3c9-06bf-4e62-bdce-bc5faf88779a/triesLeft
+http://localhost:8080/api/exams/a5ec80c2-c2c4-4bf3-b4ed-219ded179ed4
+http://localhost:8080/api/exams/a5ec80c2-c2c4-4bf3-b4ed-219ded179ed4/participants
+http://localhost:8080/api/exams/a5ec80c2-c2c4-4bf3-b4ed-219ded179ed4/solution
+http://localhost:8080/api/exams/a5ec80c2-c2c4-4bf3-b4ed-219ded179ed4/triesLeft
+http://localhost:8080/api/exams/be9b28a2-2db7-424d-b1bc-c43fca76b333
+http://localhost:8080/api/exams/be9b28a2-2db7-424d-b1bc-c43fca76b333/participants
+http://localhost:8080/api/exams/c46d6deb-2b96-4b66-b007-4057c1c01f5c
+http://localhost:8080/api/exams/c46d6deb-2b96-4b66-b007-4057c1c01f5c/participants
+http://localhost:8080/api/exams/c46d6deb-2b96-4b66-b007-4057c1c01f5c/triesLeft
+http://localhost:8080/api/exams/
+http://localhost:8080/api/
+http://localhost:8080/favicon.ico
+http://localhost:8080/main.7de1870ba82f2de2bce1.js
+http://localhost:8080/polyfills.35a5ca1855eb057f016a.js
+http://localhost:8080/robots.txt
+http://localhost:8080/runtime.acf0dec4155e77772545.js
+http://localhost:8080/sitemap.xml
+http://localhost:8080/styles.fd6b61cc6c2b84baa94a.css
+Total of 26 URLs
